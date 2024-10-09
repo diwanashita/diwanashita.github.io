@@ -1,7 +1,8 @@
 # diwanashita.github.io
 ## Ashita Diwan
 
-Hi! 
+Hi!👋
+
 I am Ashita, pronounced aa-shi-ta.
 
 I am a student completing my Master of Data Science degree from the University of British Columbia. 
