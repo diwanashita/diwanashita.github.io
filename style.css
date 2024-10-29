@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #001830;
+    color: #ebe9e2;
+}
+
+.cursor-glow {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.1s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column img {
+    max-width: 100%;  /* ensures image doesn't overflow container */
+    height: auto;     /* maintains aspect ratio */
+    display: block;   /* removes any unwanted spacing */
+    margin: 0 auto;   /* centers the image */
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.scroll-content {
+    height: 100%;
+    padding-right: 15px;
+}
+
+.paragraph {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Additional styling */
+a {
+    color: #66ccff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #99ddff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        flex: none;
+        width: 100%;
+    }
+    
+    .right-column {
+        border-left: none;
+        border-top: 2px solid white;
+    }
+}
+
