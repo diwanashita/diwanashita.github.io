@@ -18,6 +18,6 @@ I used Adrian Hajdin's Javascript Mastery tutorial on [YouTube](https://www.yout
 You can also find the github repository I used as reference [here](https://github.com/adrianhajdin/project_3D_developer_portfolio/tree/main)
 
 
-Adrian has really good material on learning basics and advance levels of javascript and I would highly recommend checking hime out. Personally, I was curious about the timeline and rotating logos which is what motivated to create my own website. 
+Adrian has really good material on learning basics and advance levels of javascript and I would highly recommend checking him out. Personally, I was curious about the timeline and rotating logos which is what motivated to create my own website. 
 
 Another credit goes to ChatGPT which helped me a lot in debugging. 
