@@ -1,29 +1,30 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  html,
+  css,
+  tailwind,
+  mongodb,
+  git,
+  docker,
+  carrent,
+  jobit,
+  tripguide,
   } from "../assets";
+
+  // importing UBC, BCIT and BCITSA images
+  import ubc from "../assets/company/ubc.png"; 
+  import bcit from "../assets/company/bcit.png"; 
+  import bcitsa from "../assets/company/bcitsa.png"; 
+
+  // importing R, Python, SQL images
+  import r from "../assets/tech/r.png";
+  import python from "../assets/tech/python.png"
+  import sql from "../assets/tech/sql.png"
+
   
   export const navLinks = [
     {
@@ -61,6 +62,42 @@ import {
   
   const technologies = [
     {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "R",
+      icon: r,
+    },
+    {
+      name: "SQL",
+      icon: sql,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
+    // {
+    //   name: "Node JS",
+    //   icon: nodejs,
+    // },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -73,99 +110,68 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Data Scientist in the making",
+      company_name: "UBC Master of Data Science",
+      icon: ubc, 
+      iconBg: "#e7dcf5",
+      date: "September 2024 - June 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Mastered tools and techniques for cleaning, analyzing, and visualizing data using Python and R, ensuring actionable insights and effective communication.",
+        "Developed, evaluated, and optimized predictive models and algorithms for classification, regression, and clustering tasks.",
+        "Skilled in handling large datasets, performing SQL queries, and utilizing cloud-based and distributed computing systems for scalable data processing.",
+        "Applied statistical methods and computational techniques to solve complex, real-world problems across various domains.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Business Systems Specialist",
+      company_name: "BCIT Student Association",
+      icon: bcitsa,
+      iconBg: "#e7dcf5",
+      date: "August 2023 - August 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Conducted comprehensive process analysis, achieving significant improvements in efficiency through data-driven technology solutions.",
+        "Designed and validated automated testing scripts using Python, ensuring reliable system deployment and functionality.",
+        "Led training programs for enterprise-level software tools, enhancing adoption and user engagement across diverse teams.",
+        "Provided project management support for cross-functional teams while optimizing resource tracking and management systems.",
+        "Delivered technical support and troubleshooting, ensuring uninterrupted system performance and operational stability.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Business Systems Analyst",
+      company_name: "BCIT Student Association",
+      icon: bcit,
+      iconBg: "#e7dcf5",
+      date: "June 2022 - July 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Automated operational workflows, increasing efficiency by 50% through process optimization and data-driven solutions.",
+        "Consolidated data from multiple sources, delivering actionable insights through advanced visualizations and analytics tools.",
+        "Improved resource allocation by implementing scheduling automation for streamlined team operations.",
+        "Delivered technical support to ensure accuracy and efficiency in inventory and resource management systems.",
+        "Enhanced data-driven decision-making by integrating automation and reporting tools for seamless analysis and reporting.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      title: "Bachelors in Business Administration (Business Intelligence)",
+      company_name: "British Columbia Institute of Technology",
+      icon: bcit,
+      iconBg: "#e7dcf5",
+      date: "July 2022 - August 2023",
+      points: [],
+    },
+    {
+      title: "Diploma in Business IT Management (Artificial Intelligence Management)",
+      company_name: "British Columbia Institute of Technology",
+      icon: bcit,
+      iconBg: "#e7dcf5",
+      date: "September 2020 - June 2022",
+      points: [],
     },
   ];
   
