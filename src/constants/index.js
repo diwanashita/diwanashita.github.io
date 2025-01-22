@@ -1,28 +1,30 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    ubc,
-    bcitsa,
-    bcit,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  html,
+  css,
+  tailwind,
+  mongodb,
+  git,
+  docker,
+  carrent,
+  jobit,
+  tripguide,
   } from "../assets";
+
+  // importing UBC, BCIT and BCITSA images
+  import ubc from "../assets/company/ubc.png"; 
+  import bcit from "../assets/company/bcit.png"; 
+  import bcitsa from "../assets/company/bcitsa.png"; 
+
+  // importing R, Python, SQL images
+  import r from "../assets/tech/r.png";
+  import python from "../assets/tech/python.png"
+  import sql from "../assets/tech/sql.png"
+
   
   export const navLinks = [
     {
@@ -60,6 +62,42 @@ import {
   
   const technologies = [
     {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "R",
+      icon: r,
+    },
+    {
+      name: "SQL",
+      icon: sql,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
+    // {
+    //   name: "Node JS",
+    //   icon: nodejs,
+    // },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -72,44 +110,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
@@ -117,8 +119,8 @@ import {
     {
       title: "Data Scientist in the making",
       company_name: "UBC Master of Data Science",
-      icon: ubc,
-      iconBg: "#383E56",
+      icon: ubc, 
+      iconBg: "#e7dcf5",
       date: "September 2024 - June 2025",
       points: [
         "Mastered tools and techniques for cleaning, analyzing, and visualizing data using Python and R, ensuring actionable insights and effective communication.",
@@ -131,7 +133,7 @@ import {
       title: "Business Systems Specialist",
       company_name: "BCIT Student Association",
       icon: bcitsa,
-      iconBg: "#E6DEDD",
+      iconBg: "#e7dcf5",
       date: "August 2023 - August 2024",
       points: [
         "Conducted comprehensive process analysis, achieving significant improvements in efficiency through data-driven technology solutions.",
@@ -144,9 +146,9 @@ import {
     {
       title: "Business Systems Analyst",
       company_name: "BCIT Student Association",
-      icon: bcitsa,
-      iconBg: "#383E56",
-      date: "July 2022 - July 2023",
+      icon: bcit,
+      iconBg: "#e7dcf5",
+      date: "June 2022 - July 2023",
       points: [
         "Automated operational workflows, increasing efficiency by 50% through process optimization and data-driven solutions.",
         "Consolidated data from multiple sources, delivering actionable insights through advanced visualizations and analytics tools.",
@@ -159,15 +161,17 @@ import {
       title: "Bachelors in Business Administration (Business Intelligence)",
       company_name: "British Columbia Institute of Technology",
       icon: bcit,
-      iconBg: "#E6DEDD",
+      iconBg: "#e7dcf5",
       date: "July 2022 - August 2023",
+      points: [],
     },
     {
       title: "Diploma in Business IT Management (Artificial Intelligence Management)",
       company_name: "British Columbia Institute of Technology",
       icon: bcit,
-      iconBg: "#E6DEDD",
+      iconBg: "#e7dcf5",
       date: "September 2020 - June 2022",
+      points: [],
     },
   ];
   

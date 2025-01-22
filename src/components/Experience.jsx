@@ -42,6 +42,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
       {/* Below is for adding bullet points. Might remove it. */}
+      {/* 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
           <li
@@ -52,6 +53,7 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      */}
     </VerticalTimelineElement>
   );
 };

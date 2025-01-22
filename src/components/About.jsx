@@ -7,6 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
@@ -48,31 +49,30 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         <p>
-          Currently, I am a student completing my <a href="https://masterdatascience.ubc.ca/">Master of Data Science</a> 
-          from <a href="https://www.ubc.ca/">University of British Columbia</a> in Vancouver, Canada.
+          I am a <a href="https://masterdatascience.ubc.ca/">Master of Data Science</a> student at <a href="https://www.ubc.ca/">University of British Columbia</a> in Vancouver, Canada.
         </p>
         <br />
         <p>
-          My inteteres in data science grew from my undergrad degree in <a href="https://www.bcit.ca/programs/business-information-technology-management-artificial-intelligence-management-option-diploma-full-time-623adipma/">Business Information Technology Management - Artificial Intelligence Management (BITMAN-AI)</a>
-          from <a href="https://www.bcit.ca/">British Columbia Institute of Technology</a>. I grew fond of data analysis and wanted to learn and dig deeper into the world of data. 
+          My interest in data science began during my undergraduate degree in <a href="https://www.bcit.ca/programs/business-information-technology-management-artificial-intelligence-management-option-diploma-full-time-623adipma/">Business Information Technology Management - Artificial Intelligence Management (BITMAN-AI)</a> 
+          at <a href="https://www.bcit.ca/">British Columbia Institute of Technology</a>, where I developed a passion for data analysis and wanted to explore it further.
         </p>
         <br />
         <p>
-          I am passionate about using data to drive positive changes. Through data, I desire to build data transparency and data-driven decision making for businesses. 
-          I strongly believe that using data to guide business decisions can lead to more informed strategies, ultimately benefiting both the departments and the organization as a whole.
+        I am driven by the potential of data to drive positive change. I aim to promote transparency and data-driven decision-making, helping businesses develop informed strategies that 
+        benefit both departments and the organization as a whole.
         </p>
         <br />
         <p>
-          As evident by this website, I am always looking for new mediums to demonstrate my creativity. 
-          I enjoy learning and growing in both my professional and personal life. 
+        This website reflects my creativity and commitment to continuous learning in both my professional and personal life.
         </p>
       </motion.p>
-
+      {/* 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      */}
     </>
   );
 };
