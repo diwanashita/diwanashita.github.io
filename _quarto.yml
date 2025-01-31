@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ashita Diwan"
+  navbar:
+    right:
+      - text: "Home"
+        href: "#"
+      - text: "About"
+        href: "#about"
+      - text: "Experience"
+        href: "#experience"
+      - text: "Contact"
+        href: "#contact"
+
+format:
+  html:
+    theme: "theme.scss"
+    css: styles.css
+    toc: false
+    page-layout: full
+    include-in-header:
+      - text: |
+          <script src="scroll.js"></script>

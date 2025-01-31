@@ -1,0 +1,422 @@
+/*-- scss:defaults --*/
+// src/theme.scss
+
+// Color Palette
+$primary-color: #ffffff; // Primary text color
+$secondary-color: #dfd9ff; // Secondary text color
+$background-color: #000000; // Background color
+$navbar-bg-color: rgba(60, 51, 80, 0); // Background color for navbar when scrolled
+
+// Typography
+$font-family: 'Poppins', sans-serif; // Default font family (adjust as needed)
+
+$font-size-hero-head: 80px; // Hero head text size
+$font-size-hero-sub: 30px; // Hero sub text size
+$font-size-section-head: 60px; // Section head text size
+$font-size-section-sub: 18px; // Section sub text size
+$font-size-navbar: 18px; // Navbar link size
+$font-size-navbar-mobile: 16px; // Navbar link size for mobile
+
+$font-weight-black: 900; // Font weight for black
+$font-weight-medium: 500; // Font weight for medium
+$font-weight-bold: 700; // Font weight for bold
+
+$line-height-hero-head: 98px; // Line height for hero head text
+$line-height-hero-sub: 40px; // Line height for hero sub text
+
+// Spacing
+$padding-x: 16px; // Horizontal padding
+$padding-y: 16px; // Vertical padding
+$navbar-padding-y: 5px; // Navbar vertical padding
+$padding: 10px; // General padding
+
+// Button Styles
+$button-bg-color: $primary-color; // Background color for buttons
+$button-text-color: $background-color; // Text color for buttons
+$button-hover-bg-color: darken($button-bg-color, 10%); // Darker background on hover
+$button-border-radius: 5px; // Border radius for buttons
+$button-padding: 10px 20px; // Padding for buttons
+$button-font-size: 16px; // Font size for buttons
+$button-font-weight: $font-weight-bold; // Font weight for buttons
+
+// Global Styles
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  background-image: url("img/herobg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  // This keeps the background fixed while scrolling
+  color: $primary-color;
+  margin: 0;
+  min-height: 100vh;  // Ensures the background covers the full viewport height
+}
+
+// Navbar Styles
+.navbar {
+  background-color: $navbar-bg-color !important;
+  padding: $navbar-padding-y $padding-x;
+}
+
+// Target Quarto's navbar items
+.navbar-nav .nav-link {
+  font-size: $font-size-navbar !important;
+  color: $secondary-color !important;
+  font-weight: $font-weight-medium !important;
+  cursor: pointer;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease !important;
+
+  &.active {
+    color: $primary-color !important;
+    font-weight: $font-weight-bold !important;
+  }
+
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+
+// Update the navbar brand (title) if needed
+.navbar-brand {
+  color: $primary-color !important;
+  font-weight: $font-weight-bold !important;
+  font-size: $font-size-navbar !important;
+
+  &:hover {
+    color: $secondary-color !important;
+  }
+}
+
+// For the mobile menu button
+.navbar-toggler {
+  color: $primary-color !important;
+  border-color: $secondary-color !important;
+  
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  &::before {
+    content: "☰";
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+}
+
+// Section Styles
+.section {
+  &__head {
+    font-size: $font-size-section-head;
+    font-weight: $font-weight-black;
+    color: $primary-color;
+  }
+
+  &__sub {
+    font-size: $font-size-section-sub;
+    color: $secondary-color;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; // Adjust tracking as needed
+  }
+}
+
+.button {
+    background-color: $button-bg-color;
+    color: $button-text-color;
+    padding: $button-padding;
+    border: none;
+    border-radius: $button-border-radius;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $button-hover-bg-color; // Change background on hover
+    }
+  
+    &:focus {
+      outline: none; // Remove outline on focus
+    }
+}
+
+// Footer Styles
+$footer-bg-color: #1d1836; // Background color for footer
+$footer-text-color: $primary-color; // Text color for footer
+$footer-padding: 20px; // Padding for footer
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: $footer-padding;
+  text-align: center; // Center text in footer
+
+  a {
+    color: $footer-text-color; // Link color in footer
+    text-decoration: none; // Remove underline from links
+
+    &:hover {
+      text-decoration: underline; // Underline on hover
+    }
+  }
+}
+
+// Heading Styles
+h1, .h1 {
+  font-size: $font-size-section-head !important;
+  font-weight: $font-weight-black !important;
+  color: $primary-color !important;
+  margin-bottom: 1rem;
+  border-bottom: none !important;  // Remove underline
+}
+
+h2, .h2 {
+  font-size: $font-size-hero-sub !important;
+  font-weight: $font-weight-bold !important;
+  color: $primary-color !important;
+  margin-bottom: 0.8rem;
+  border-bottom: none !important;  // Remove underline
+}
+
+h3, .h3 {
+  font-size: $font-size-section-sub !important;
+  font-weight: $font-weight-medium !important;
+  color: $secondary-color !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+  border-bottom: none !important;  // Remove underline
+}
+
+// Style for regular text
+p {
+  color: $secondary-color;
+  font-size: $font-size-section-sub;
+  line-height: 1.6;
+  padding: 1%;
+  margin: 1.5%;
+}
+
+// Style for links in text
+a {
+  color: $secondary-color !important;  // Match paragraph color
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  
+  &:hover {
+    opacity: 0.8;  // Subtle hover effect instead of underline
+    text-decoration: none;  // Remove underline on hover
+  }
+}
+
+// Override Quarto's default link styles
+.content a {
+  color: $secondary-color !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none !important;
+  }
+}
+
+// Hero container
+.hero-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+// Animation keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animation classes
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Hero animations (immediate on load)
+.hero-heading {
+  font-size: $font-size-hero-head !important;
+  margin-bottom: 1rem !important;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.hero-subtext {
+  font-size: $font-size-hero-sub !important;
+  color: $secondary-color !important;
+  margin-top: 0 !important;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.3s forwards;
+}
+
+// Content section base styles
+.content-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+// Adjust spacing between paragraphs
+.content-section p {
+  margin-bottom: 1.5rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// // Timeline styles
+// .timeline {
+//   position: relative;
+//   width: 100%;
+//   max-width: 1200px;
+//   margin: 2rem auto;
+//   padding: 0 20px;
+// }
+
+// .timeline::before {
+//   content: '';
+//   position: absolute;
+//   left: 50%;
+//   width: 2px;
+//   height: 100%;
+//   background: $secondary-color;
+//   opacity: 0.3;
+// }
+
+// .timeline-item {
+//   position: relative;
+//   margin-bottom: 60px;
+//   width: calc(50% - 40px);
+  
+//   &:nth-child(odd) {
+//     left: 0;
+//     padding-right: 40px;
+//   }
+  
+//   &:nth-child(even) {
+//     left: 50%;
+//     padding-left: 40px;
+//   }
+// }
+
+// .timeline-content {
+//   position: relative;
+//   padding: 20px;
+//   background: rgba(29, 24, 54, 0.8);
+//   backdrop-filter: blur(10px);
+//   border-radius: 8px;
+  
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 20px;
+//     width: 20px;
+//     height: 20px;
+//     background: $secondary-color;
+//     border: 4px solid $primary-color;
+//     border-radius: 50%;
+//   }
+// }
+
+// .timeline-item:nth-child(odd) .timeline-content::before {
+//   right: -50px;
+// }
+
+// .timeline-item:nth-child(even) .timeline-content::before {
+//   left: -50px;
+// }
+
+// .timeline-date {
+//   font-size: 0.9em;
+//   color: $secondary-color;
+//   margin-bottom: 8px;
+// }
+
+// .timeline-title {
+//   font-size: 1.2em;
+//   color: $primary-color;
+//   font-weight: bold;
+//   margin-bottom: 8px;
+// }
+
+// .timeline-company {
+//   font-size: 1em;
+//   color: $secondary-color;
+// }
+
+// @media screen and (max-width: 768px) {
+//   .timeline::before {
+//     left: 40px;
+//   }
+  
+//   .timeline-item {
+//     width: 100%;
+//     padding-left: 80px !important;
+//     padding-right: 0 !important;
+    
+//     &:nth-child(odd),
+//     &:nth-child(even) {
+//       left: 0;
+//     }
+//   }
+  
+//   .timeline-content::before {
+//     left: -50px !important;
+//   }
+// }
+
+// // Add this to your timeline styles
+// .timeline, .timeline-item, .timeline-content {
+//   display: block;
+//   position: relative;
+// }
+
+// .timeline-content {
+//   opacity: 1;
+//   visibility: visible;
+// }
+
