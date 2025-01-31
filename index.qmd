@@ -1,0 +1,149 @@
+---
+title: ""
+---
+<div class="hero-container">
+  <h1 class="hero-heading">Hello, I am Ashita 👋🏽</h1>
+  <p class="hero-subtext">I'm a (work-in-progress) Data Scientist.</p>
+</div>
+<div class="content-section fade-in" id="about">
+  <h1>About me</h1>
+  <p class="fade-in">
+    I am a <a href="https://masterdatascience.ubc.ca/">Master of Data Science</a> student at <a href="https://www.ubc.ca/">University of British Columbia</a> in Vancouver, Canada. 
+    <br>
+    <br>
+    My interest in data science began during my undergraduate degree in <a href="https://www.bcit.ca/programs/business-information-technology-management-artificial-intelligence-management-option-diploma-full-time-623adipma/">Business Information Technology Management - Artificial Intelligence Management (BITMAN-AI)</a> at <a href="https://www.bcit.ca/">British Columbia Institute of Technology</a>.
+    <br>
+    <br>
+    I am driven by the potential of data to drive positive change. I aim to promote transparency and data-driven decision-making, helping businesses develop informed strategies that benefit both departments and the organization as a whole.
+  </p>
+  <p class="fade-in">
+    This website reflects my creativity and commitment to continuous learning in both my professional and personal life.
+  </p>
+</div>
+
+```{=html}
+<div class="content-section fade-in" id="experience">
+  <h1>My Journey So Far</h1>
+  <section class="design-section">
+  <div class="timeline">
+    <div class="timeline-empty">
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class="timeline-component timeline-content">
+      <h3>Data Scientist in the making</h3>
+      <p>UBC Master of Data Science</p>
+      <p>September 2024 - June 2025</p>
+    </div>
+    <div class="timeline-component timeline-content">
+      <h3>Business Systems Specialist</h3>
+      <p>BCIT Student Association</p>
+      <p>August 2023 - August 2024</p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class="timeline-empty">
+    </div>
+    <div class="timeline-empty">
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class=" timeline-component timeline-content">
+      <h3>Business Systems Analyst</h3>
+      <p>BCIT Student Association</p>
+      <p>June 2022 - July 2023</p>
+    </div>
+
+    <!-- left side start -->
+    <div class="timeline-component timeline-content">
+      <h3>Bachelors in Business Administration (Business Intelligence)</h3>
+      <p>British Columbia Institute of Technology</p>
+      <p>July 2022 - August 2023</p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class="timeline-empty">
+    </div>
+    <!-- left side end -->
+
+     <!-- right side start -->
+    <div class="timeline-empty">
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class="timeline-component timeline-content">
+      <h3>Diploma in Business IT Management (Artificial Intelligence Management)</h3>
+      <p>British Columbia Institute of Technology</p>
+      <p>September 2020 - June 2022</p>
+    </div>
+    <!-- right side end -->
+
+  </div>
+  </div> 
+</section>
+</div>
+
+<div class="tech-container">
+  <div class="tech-item">
+      <img src="img/tech/github_white.png" alt="git"> 
+      <div class="tech-name">GitHub</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/python.png" alt="Python">
+      <div class="tech-name">Python</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/r.png" alt="R">
+      <div class="tech-name">R</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/sql.png" alt="SQL">
+      <div class="tech-name">SQL</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/mongodb.png" alt="MongoDB">
+      <div class="tech-name">MongoDB</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/docker.png" alt="Docker">
+      <div class="tech-name">Docker</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/html.png" alt="HTML">
+      <div class="tech-name">HTML</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/css.png" alt="CSS">
+      <div class="tech-name">CSS</div>
+  </div>
+  <div class="tech-item">
+      <img src="img/tech/javascript.png" alt="JavaScript">
+      <div class="tech-name">JavaScript</div>
+  </div>
+</div>
+
+<div class="content-section fade-in" id="contact">
+  <h1> Get In Touch</h1>
+  <div class="contact-container">
+    <div class="contact-info">
+      <a href="mailto:ashitadiwan2@gmail.com"> 
+        <img src="img/tech/email.png" alt="Email" class="contact-icon"> 
+        ashitadiwan2@gmail.com 
+      </a>
+      <a href="https://www.linkedin.com/in/ashita-diwan-3b30b8164/" target="_blank" rel="noopener noreferrer">
+        <img src="img/tech/linkedin.png" alt="LinkedIn" class="contact-icon"> 
+        LinkedIn
+      </a>
+      <a href="https://github.com/diwanashita" target="_blank" rel="noopener noreferrer">
+        <img src="img/tech/github_white.png" alt="GitHub" class="contact-icon">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+```
