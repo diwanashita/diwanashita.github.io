@@ -12,6 +12,10 @@ website:
         href: "#about"
       - text: "Experience"
         href: "#experience"
+      - text: "Skills"
+        href: "#skills"
+      - text: "Projects"
+        href: "#projects"
       - text: "Contact"
         href: "#contact"
 
